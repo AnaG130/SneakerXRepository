@@ -1,0 +1,869 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\carrito.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\carrito.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\pedidonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\pedidonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\pagosdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\pagosdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\pagosnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\pagosnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\pedidodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\pedidodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\personalizaciondatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\personalizaciondatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\productosdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\productosdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\tsedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\tsedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\ubicacionesdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\ubicacionesdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\usuariosdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\usuariosdatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\menuprincipal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\menuprincipal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\usuariosnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\usuariosnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\datos\\encriptadoraes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D60D40C-26EF-477E-B958-FFBB3A3D9A3A}|Datos\\Datos.csproj|solutionrelative:datos\\encriptadoraes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\registro.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\registro.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\recuperar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\recuperar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\actperfil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\actperfil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\verificarpreguntas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\verificarpreguntas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\ubicacionesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\ubicacionesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\verificarpreguntas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\verificarpreguntas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\sw.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\sw.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\manifest.webmanifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\manifest.webmanifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\menuprincipal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\menuprincipal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\menuusuario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\menuusuario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\menuprincipal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\menuprincipal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\welcomepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\welcomepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\onboarding.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\onboarding.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\metodopago.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\metodopago.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\metodopago.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\metodopago.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\metodopago.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\metodopago.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\autenticacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\autenticacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\menuusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\menuusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\personalizacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\personalizacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\autenticacion.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\autenticacion.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\recuperar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\recuperar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\tsenegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\tsenegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\registro.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\registro.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\personalizacion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\personalizacion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\productonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\productonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\personalizacion.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\personalizacion.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\carrito.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\carrito.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\negocio\\personalizacionnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31E46CC3-E711-4C37-A8B0-4E745FA02DC6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\personalizacionnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\pages\\actperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\pages\\actperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|c:\\users\\anala\\onedrive\\escritorio\\sneakerx\\sneakerx\\sneakerx\\sneakerxrepository\\sneakerx\\wwwroot\\css\\actualizarperfil.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6D5B88C-BFEE-4AEB-AEC5-9083371942A5}|SneakerX\\SneakerX.csproj|solutionrelative:sneakerx\\wwwroot\\css\\actualizarperfil.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Carrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Carrito.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Carrito.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Carrito.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Carrito.cshtml",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAIwDsBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T01:55:01.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Carrito.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Carrito.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Carrito.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Carrito.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\Carrito.cshtml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:22:23.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PedidoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\PedidoNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\PedidoNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\PedidoNegocio.cs",
+              "RelativeToolTip": "Negocio\\PedidoNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:21:19.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PagosDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\PagosDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\PagosDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\PagosDatos.cs",
+              "RelativeToolTip": "Datos\\PagosDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T04:33:33.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagosNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\PagosNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\PagosNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\PagosNegocio.cs",
+              "RelativeToolTip": "Negocio\\PagosNegocio.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T04:33:54.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PedidoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\PedidoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\PedidoDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\PedidoDatos.cs",
+              "RelativeToolTip": "Datos\\PedidoDatos.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAkwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:20:14.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonalizacionDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\PersonalizacionDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\PersonalizacionDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\PersonalizacionDatos.cs",
+              "RelativeToolTip": "Datos\\PersonalizacionDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:36:51.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductosDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\ProductosDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\ProductosDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\ProductosDatos.cs",
+              "RelativeToolTip": "Datos\\ProductosDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:48:24.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TseDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\TseDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\TseDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\TseDatos.cs",
+              "RelativeToolTip": "Datos\\TseDatos.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T04:23:04.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UbicacionesDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\UbicacionesDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\UbicacionesDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\UbicacionesDatos.cs",
+              "RelativeToolTip": "Datos\\UbicacionesDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T04:28:57.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsuariosDatos.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\UsuariosDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\UsuariosDatos.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\UsuariosDatos.cs",
+              "RelativeToolTip": "Datos\\UsuariosDatos.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAADwv3kAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T00:54:54.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T03:29:46.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuPrincipal.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MenuPrincipal.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\MenuPrincipal.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MenuPrincipal.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\MenuPrincipal.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:52:37.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsuariosNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\UsuariosNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\UsuariosNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\UsuariosNegocio.cs",
+              "RelativeToolTip": "Negocio\\UsuariosNegocio.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAmwFQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T00:54:34.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "VerificarPreguntas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\VerificarPreguntas.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\VerificarPreguntas.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\VerificarPreguntas.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\VerificarPreguntas.cshtml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAywEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T20:33:03.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Index.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T00:36:19.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Registro.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Registro.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Registro.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Registro.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\Registro.cshtml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:28:19.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EncriptadorAES.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\EncriptadorAES.cs",
+              "RelativeDocumentMoniker": "Datos\\EncriptadorAES.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Datos\\EncriptadorAES.cs",
+              "RelativeToolTip": "Datos\\EncriptadorAES.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowDcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T03:16:16.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\EmailService.cs",
+              "RelativeDocumentMoniker": "Negocio\\EmailService.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\EmailService.cs",
+              "RelativeToolTip": "Negocio\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T19:38:41.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ActPerfil.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\ActPerfil.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\ActPerfil.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\ActPerfil.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\ActPerfil.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T04:11:44.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Recuperar.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Recuperar.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Recuperar.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Recuperar.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\Recuperar.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T20:23:51.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UbicacionesNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\UbicacionesNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\UbicacionesNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\UbicacionesNegocio.cs",
+              "RelativeToolTip": "Negocio\\UbicacionesNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:12:33.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VerificarPreguntas.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\VerificarPreguntas.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\VerificarPreguntas.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\VerificarPreguntas.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\VerificarPreguntas.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvy8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T20:32:49.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwDkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T00:36:48.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Program.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Program.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Program.cs",
+              "RelativeToolTip": "SneakerX\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T01:34:06.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "manifest.webmanifest",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\manifest.webmanifest",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\manifest.webmanifest",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\manifest.webmanifest",
+              "RelativeToolTip": "SneakerX\\wwwroot\\manifest.webmanifest",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-20T01:41:44.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "sw.js",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\sw.js",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\sw.js",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\sw.js",
+              "RelativeToolTip": "SneakerX\\wwwroot\\sw.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-20T01:42:43.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MenuPrincipal.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MenuPrincipal.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\MenuPrincipal.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MenuPrincipal.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\MenuPrincipal.cshtml",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAYwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T01:05:40.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "menuprincipal.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\menuprincipal.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\menuprincipal.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\menuprincipal.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\menuprincipal.css",
+              "ViewState": "AgIAANUAAAAAAAAAAAAqwPkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-17T01:06:03.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "menuusuario.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\menuusuario.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\menuusuario.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\menuusuario.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\menuusuario.css",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAwwMkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-17T01:28:03.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WelcomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\WelcomePage.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\WelcomePage.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\WelcomePage.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\WelcomePage.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowFgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T02:54:52.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Registro.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Registro.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Registro.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Registro.cshtml",
+              "ViewState": "AgIAABEBAAAAAAAAAAAAADkBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T01:00:00.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "onboarding.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\onboarding.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\onboarding.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\onboarding.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\onboarding.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-13T03:01:59.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MetodoPago.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MetodoPago.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\MetodoPago.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MetodoPago.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\MetodoPago.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwDoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T01:49:10.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "metodopago.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\metodopago.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\metodopago.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\metodopago.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\metodopago.css",
+              "ViewState": "AgIAANEAAAAAAAAAAAAUwOsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T01:49:33.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAgwFsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-17T00:39:15.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MetodoPago.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MetodoPago.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\MetodoPago.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MetodoPago.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\MetodoPago.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA9wDQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T07:13:06.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Autenticacion.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Autenticacion.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Autenticacion.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Autenticacion.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Autenticacion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T20:00:27.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "MenuUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MenuUsuario.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\MenuUsuario.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\MenuUsuario.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\MenuUsuario.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T01:27:24.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Personalizacion.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Personalizacion.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Personalizacion.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Personalizacion.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Personalizacion.cshtml",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAswGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-17T01:22:19.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Autenticacion.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Autenticacion.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Autenticacion.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Autenticacion.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\Autenticacion.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T20:00:45.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Recuperar.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Recuperar.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Recuperar.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Recuperar.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\Recuperar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T20:23:30.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TseNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\TseNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\TseNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\TseNegocio.cs",
+              "RelativeToolTip": "Negocio\\TseNegocio.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T04:32:08.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "personalizacion.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\personalizacion.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\personalizacion.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\personalizacion.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\personalizacion.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-17T01:23:02.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "registro.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\registro.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\registro.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\registro.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\registro.css",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-17T01:02:18.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ProductoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\ProductoNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\ProductoNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\ProductoNegocio.cs",
+              "RelativeToolTip": "Negocio\\ProductoNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:52:14.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Personalizacion.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Personalizacion.cshtml.cs",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\Personalizacion.cshtml.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\Personalizacion.cshtml.cs",
+              "RelativeToolTip": "SneakerX\\Pages\\Personalizacion.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:38:02.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PersonalizacionNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\PersonalizacionNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\PersonalizacionNegocio.cs",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\Negocio\\PersonalizacionNegocio.cs",
+              "RelativeToolTip": "Negocio\\PersonalizacionNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:37:51.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "carrito.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\carrito.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\carrito.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\carrito.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\carrito.css",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAIwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T01:55:22.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ActPerfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\ActPerfil.cshtml",
+              "RelativeDocumentMoniker": "SneakerX\\Pages\\ActPerfil.cshtml",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\Pages\\ActPerfil.cshtml",
+              "RelativeToolTip": "SneakerX\\Pages\\ActPerfil.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwDsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T01:35:16.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "actualizarperfil.css",
+              "DocumentMoniker": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\actualizarperfil.css",
+              "RelativeDocumentMoniker": "SneakerX\\wwwroot\\css\\actualizarperfil.css",
+              "ToolTip": "C:\\Users\\anala\\OneDrive\\Escritorio\\SneakerX\\SneakerX\\SneakerX\\SneakerXRepository\\SneakerX\\wwwroot\\css\\actualizarperfil.css",
+              "RelativeToolTip": "SneakerX\\wwwroot\\css\\actualizarperfil.css",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-18T01:38:01.227Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

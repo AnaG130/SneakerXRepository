@@ -1,0 +1,47 @@
+﻿@page
+@model VerificarPreguntasModel
+@{
+    ViewData["Title"] = "Verificación de identidad";
+}
+
+<body>
+    <header>
+        <h1>Verificación de identidad</h1>
+    </header>
+
+    <div class="container">
+        <form method="post">
+            <p>Responde las siguientes preguntas de seguridad para restablecer tu contraseña.</p>
+
+            <fieldset style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                <legend><strong>Preguntas de Seguridad</strong></legend>
+
+                <label>@Model.Pregunta1</label>
+                <input type="text" asp-for="Respuesta1" required />
+
+                <label>@Model.Pregunta2</label>
+                <input type="text" asp-for="Respuesta2" required />
+
+                <label>@Model.Pregunta3</label>
+                <input type="text" asp-for="Respuesta3" required />
+            </fieldset>
+
+            <fieldset style="padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                <legend><strong>Restablecer Contraseña</strong></legend>
+
+                <label>Nueva Contraseña</label>
+                <input type="password" asp-for="NuevaPassword" required />
+
+                <label>Confirmar Contraseña</label>
+                <input type="password" asp-for="ConfirmarPassword" required />
+            </fieldset>
+
+            <button type="submit" style="margin-top: 20px;">Restablecer contraseña</button>
+
+            @if (!string.IsNullOrEmpty(Model.Mensaje))
+            {
+                <p style="color:red; margin-top: 10px;">@Model.Mensaje</p>
+            }
+        </form>
+    </div>
+</body>

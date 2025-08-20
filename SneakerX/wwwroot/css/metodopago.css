@@ -1,0 +1,254 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    background-color: #3c592f;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+    header h1 {
+        color: white;
+        font-size: 16px;
+    }
+
+/* Formulario */
+.form-container {
+    max-width: 420px;
+    margin: 60px auto 100px;
+    padding: 0 20px;
+}
+
+form label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+/* Inputs en fila */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-half {
+    flex: 1;
+}
+
+/* Botón flotante guardar */
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.floating-btn {
+    background-color: #3c592f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+    .floating-btn:hover {
+        background-color: #2e4525;
+    }
+
+/* Barra de navegación inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c2d0b4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #aaa;
+    z-index: 100;
+}
+
+    .bottom-nav img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) contrast(100%);
+    }
+
+/* Estilos mejorados para la tarjeta */
+.tarjeta-container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    height: 220px;
+}
+
+.tarjeta {
+    background: linear-gradient(135deg, #1e1e1e 0%, #3c3c3c 100%);
+    color: white;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+    .tarjeta.rotada {
+        transform: rotateY(180deg);
+    }
+
+/* Frente de la tarjeta */
+.tarjeta-frente,
+.tarjeta-reverso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta-frente {
+    background: linear-gradient(135deg, #1e1e1e 0%, #3c3c3c 100%);
+}
+
+    /* Efecto de banda holográfica */
+    .tarjeta-frente::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 30px;
+        background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+        border-radius: 3px;
+    }
+
+.logo-tipo {
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+    .logo-tipo img {
+        height: 20px;
+        object-fit: contain;
+    }
+
+.numero-tarjeta {
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    word-spacing: 5px;
+}
+
+.nombre-fecha {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Reverso de la tarjeta */
+.tarjeta-reverso {
+    background: linear-gradient(135deg, #2e2e2e 0%, #1a1a1a 100%);
+    transform: rotateY(180deg);
+    padding-top: 15px;
+}
+
+.cinta {
+    background: #000;
+    height: 40px;
+    margin: 15px -20px;
+    position: relative;
+}
+
+    .cinta::after {
+        content: 'CVV';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 10px;
+        background: rgba(0,0,0,0.5);
+        padding: 2px 5px;
+        border-radius: 3px;
+    }
+
+.cvv-box {
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Courier New', monospace;
+    margin-top: 5px;
+}
+
+    .cvv-box label {
+        float: left;
+        color: #666;
+        font-size: 10px;
+        margin-top: 2px;
+    }
+
+/* Mensaje de alerta */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

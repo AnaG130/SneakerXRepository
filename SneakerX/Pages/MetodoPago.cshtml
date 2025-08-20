@@ -1,0 +1,408 @@
+﻿@page
+@model SneakerX.Pages.MetodoPagoModel
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Métodos de pago</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #3c592f;
+            width: 100vw;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+            header h1 {
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+        /* Contenedor principal */
+        .main-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 20px;
+            padding-bottom: 100px; /* ← espaciado adicional para que no tape el bottom-nav */
+        }
+
+
+        /* Tarjeta de crédito */
+        .card-preview {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+
+            .card-preview::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            }
+
+        .card-logo {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+            .card-logo img {
+                height: 24px;
+            }
+
+        .card-number {
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .card-holder, .card-expiry {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-label {
+            font-size: 10px;
+            opacity: 0.8;
+            margin-bottom: 3px;
+        }
+
+        /* Formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border 0.3s;
+        }
+
+            .form-control:focus {
+                border-color: #3c592f;
+                outline: none;
+                box-shadow: 0 0 0 2px rgba(60, 89, 47, 0.2);
+            }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        /* Botón */
+        .btn-submit {
+            background-color: #3c592f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+            .btn-submit:hover {
+                background-color: #2e4525;
+            }
+
+        /* Barra de navegación inferior */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            background-color: #c2d0b4;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 8px 0;
+            border-top: 1px solid #aaa;
+            z-index: 10;
+        }
+
+            .bottom-nav img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+                filter: brightness(0) saturate(100%) contrast(100%);
+            }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #555;
+            font-size: 12px;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 4px;
+        }
+
+        /* Mensajes */
+        .alert {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Métodos de pago</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-container">
+        @if (!string.IsNullOrEmpty(Model.Mensaje))
+        {
+            <div class="alert alert-danger">
+                @Model.Mensaje
+            </div>
+        }
+
+        <!-- Vista previa de tarjeta -->
+        <div class="card-preview">
+            <div class="card-logo" id="cardLogo">
+                <img id="cardBrandLogo" src="" alt="" style="display: none;">
+            </div>
+            <div class="card-number" id="cardNumberDisplay">•••• •••• •••• ••••</div>
+            <div class="card-details">
+                <div class="card-holder">
+                    <span class="card-label">Titular</span>
+                    <span id="cardHolderDisplay">NOMBRE PROPIETARIO</span>
+                </div>
+                <div class="card-expiry">
+                    <span class="card-label">Vence</span>
+                    <span id="cardExpiryDisplay">MM/AA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <form method="post">
+            <div class="form-group">
+                <label for="cedula" class="form-label">Cédula del propietario</label>
+                <input type="text" id="cedula" name="CedulaDueno" class="form-control"
+                       placeholder="1-2345-6789" required onkeydown="if(event.key === 'Enter') buscarPropietario(event)">
+            </div>
+
+            <div class="form-group">
+                <label for="numeroCompleto" class="form-label">Número de tarjeta</label>
+                <input type="text" id="numeroCompleto" name="NumeroTarjeta" class="form-control" required
+                       placeholder="1234 5678 9012 3456" maxlength="19">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="fecha" class="form-label">Fecha Vencimiento</label>
+                        <input type="month" id="fecha" name="FechaVencimiento" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="text" id="cvv" name="CVV" class="form-control" required
+                               placeholder="•••" maxlength="4" pattern="\d{3,4}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="saldo" class="form-label">Saldo Inicial (₡)</label>
+                <input type="number" id="saldo" name="Saldo" class="form-control" required
+                       min="0" step="100" placeholder="10000">
+            </div>
+
+            <div class="form-group">
+                <label for="telefono" class="form-label">Teléfono del propietario</label>
+                <input type="tel" id="telefono" name="TelefonoPropietario" class="form-control" required
+                       placeholder="8888-8888" maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre completo del propietario</label>
+                <input type="text" id="nombre" name="NombrePropietario" class="form-control" required
+                       placeholder="JUAN PEREZ MORA" readonly>
+            </div>
+
+
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-save"></i> Guardar Tarjeta
+            </button>
+        </form>
+    </main>
+
+    <!-- Barra de navegación inferior -->
+    <nav class="bottom-nav">
+        <a href="/MenuPrincipal" class="nav-item">
+            <img src="/img/shoe-box.png" alt="Catálogo" class="nav-icon">
+
+        </a>
+        <a href="/Personalizacion" class="nav-item">
+            <img src="/img/spray.png" alt="Personalización" class="nav-icon">
+
+        </a>
+        <a href="/Carrito" class="nav-item">
+            <img src="/img/shopping-cart (1).png" alt="Carrito" class="nav-icon">
+  
+        </a>
+        <a href="/MenuUsuario" class="nav-item">
+            <img src="/img/people (1).png" alt="Usuario" class="nav-icon">
+  
+        </a>
+    </nav>
+
+    <script>
+        async function buscarPropietario(event) {
+            event.preventDefault(); // evita que se envíe el formulario al presionar Enter
+            const cedula = document.getElementById("cedula").value;
+
+            if (!cedula) {
+                alert("Por favor ingrese la cédula.");
+                return;
+            }
+
+            try {
+                const resp = await fetch(`http://localhost:3001/tse/${cedula}`);
+                const data = await resp.json();
+
+                if (data.success && data.persona) {
+                    const { Nombre, Apellido1, Apellido2 } = data.persona;
+                    const nombreCompleto = `${Nombre} ${Apellido1} ${Apellido2}`.toUpperCase();
+                    document.getElementById("nombre").value = nombreCompleto;
+                    document.getElementById("cardHolderDisplay").textContent = nombreCompleto;
+
+                } else {
+                    alert("❌ No se encontró a la persona en el TSE.");
+                    document.getElementById("nombre").value = "";
+                }
+            } catch (error) {
+                console.error("Error al buscar propietario:", error);
+                alert("Ocurrió un error al buscar la persona.");
+            }
+        }
+    </script>
+
+
+    <script>
+        // Actualización en tiempo real de la vista previa de la tarjeta
+        const cardNumberDisplay = document.getElementById('cardNumberDisplay');
+        const cardHolderDisplay = document.getElementById('cardHolderDisplay');
+        const cardExpiryDisplay = document.getElementById('cardExpiryDisplay');
+        const cardBrandLogo = document.getElementById('cardBrandLogo');
+
+        document.getElementById('numeroCompleto').addEventListener('input', function(e) {
+            // Formatear número de tarjeta con espacios cada 4 dígitos
+            let value = e.target.value.replace(/\D/g, '');
+            let formatted = value.replace(/(\d{4})(?=\d)/g, '$1 ');
+            cardNumberDisplay.textContent = formatted || '•••• •••• •••• ••••';
+
+            // Detectar marca de tarjeta
+            detectCardBrand(value);
+        });
+
+        document.getElementById('nombre').addEventListener('input', function(e) {
+            cardHolderDisplay.textContent = e.target.value.toUpperCase() || 'NOMBRE PROPIETARIO';
+        });
+
+        document.getElementById('fecha').addEventListener('input', function(e) {
+            if (e.target.value) {
+                const [year, month] = e.target.value.split('-');
+                cardExpiryDisplay.textContent = `${month}/${year.slice(2)}`;
+            } else {
+                cardExpiryDisplay.textContent = 'MM/AA';
+            }
+        });
+
+        function detectCardBrand(cardNumber) {
+            let brand = '';
+            if (/^4/.test(cardNumber)) {
+                brand = 'visa';
+            } else if (/^5[1-5]/.test(cardNumber)) {
+                brand = 'mastercard';
+            } else if (/^3[47]/.test(cardNumber)) {
+                brand = 'amex';
+            }
+
+            if (brand) {
+                cardBrandLogo.src = `/img/${brand}.png`;
+                cardBrandLogo.alt = brand;
+                cardBrandLogo.style.display = 'block';
+            } else {
+                cardBrandLogo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

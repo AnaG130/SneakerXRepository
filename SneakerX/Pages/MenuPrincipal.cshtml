@@ -1,0 +1,151 @@
+﻿@page
+@model SneakerX.Pages.MenuPrincipalModel
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo - Sneakers X</title>
+    <link rel="stylesheet" href="~/css/menuprincipal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo</h1>
+    </header>
+
+    <main class="content">
+        <!-- Buscador -->
+        <div class="search-bar">
+            <div class="filters">
+                <span class="filter">Hombre</span>
+                <span class="filter">De lujo</span>
+                <span class="filter">Deportivas</span>
+            </div>
+            <div class="search-input">
+                <input type="text" id="searchInput" placeholder="Buscar...">
+
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <!-- Agrega esto en el body, antes del script -->
+        <div id="sizeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Selecciona tu talla</h2>
+                <div class="size-options">
+                    <button class="size-btn" data-size="36">36</button>
+                    <button class="size-btn" data-size="37">37</button>
+                    <button class="size-btn" data-size="38">38</button>
+                    <button class="size-btn" data-size="39">39</button>
+                    <button class="size-btn" data-size="40">40</button>
+                    <button class="size-btn" data-size="41">41</button>
+                    <button class="size-btn" data-size="42">42</button>
+                    <button class="size-btn" data-size="43">43</button>
+                    <button class="size-btn" data-size="44">44</button>
+                </div>
+                <form id="sizeForm" method="post" asp-page-handler="AgregarProducto">
+                    <input type="hidden" id="modalProductId" name="idProducto" />
+                    <input type="hidden" id="selectedSize" name="talla" />
+                    <button type="submit" class="confirm-btn">Confirmar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modifica tus cards de productos así: -->
+        @foreach (var producto in Model.Productos)
+        {
+            <div class="product-card">
+                <img src="@producto["ImagenUrl"]" alt="@producto["Nombre"]" />
+                <div class="product-info">
+                    <p class="product-name">@producto["Nombre"]</p>
+                    <p class="product-price">₡ @string.Format("{0:N2}", producto["Precio"])</p>
+                    <button class="add-to-cart-btn open-modal" data-productid="@producto["IdProducto"]">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        }
+
+    </main>
+
+    <!-- Barra de navegación inferior -->
+    <nav class="bottom-nav">
+        <a asp-page="/MenuPrincipal">
+            <img src="/img/shoe-box.png" alt="Catálogo">
+        </a>
+        <a asp-page="/Personalizacion">
+            <img src="/img/spray.png" alt="Personalización">
+        </a>
+        <a asp-page="/Carrito">
+            <img src="/img/shopping-cart (1).png" alt="Carrito">
+        </a>
+        <a asp-page="/MenuUsuario">
+            <img src="/img/people (1).png" alt="Usuario">
+        </a>
+    </nav>
+
+    <script>
+        // Modal para selección de talla
+        const modal = document.getElementById("sizeModal");
+        const span = document.querySelector(".close");
+        const sizeButtons = document.querySelectorAll(".size-btn");
+        const sizeForm = document.getElementById("sizeForm");
+        const selectedSizeInput = document.getElementById("selectedSize");
+        const modalProductIdInput = document.getElementById("modalProductId");
+
+        // Abrir modal al hacer clic en añadir al carrito
+        document.querySelectorAll(".open-modal").forEach(button => {
+            button.addEventListener("click", function() {
+                const productId = this.getAttribute("data-productid");
+                modalProductIdInput.value = productId;
+                modal.style.display = "block";
+            });
+        });
+
+        // Cerrar modal al hacer clic en la X
+        span.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+        // Seleccionar talla
+        sizeButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                sizeButtons.forEach(btn => btn.classList.remove("selected"));
+                this.classList.add("selected");
+                selectedSizeInput.value = this.getAttribute("data-size");
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById("searchInput").addEventListener("input", function () {
+            const query = this.value.toLowerCase();
+            const cards = document.querySelectorAll(".product-card");
+
+            cards.forEach(card => {
+                const name = card.querySelector(".product-name").textContent.toLowerCase();
+                const price = card.querySelector(".product-price").textContent.toLowerCase();
+
+                if (name.includes(query) || price.includes(query)) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

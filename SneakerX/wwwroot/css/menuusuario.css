@@ -1,0 +1,248 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    background-color: #3c592f;
+    width: 100vw;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    header h1 {
+        color: white;
+        font-size: 16px;
+    }
+
+/* Contenido principal */
+
+/* Espaciado general del contenido */
+.content {
+    padding: 40px 15px 100px; /* MÁS ESPACIO ARRIBA y suficiente abajo para la barra y botón */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de usuario */
+.card {
+    background-color: #9bb290;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contenido con ícono a la izquierda */
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Íconos pequeños */
+.small-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Texto más pequeño */
+.card h2 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #333;
+}
+
+/* Filtros + búsqueda */
+.search-bar {
+    margin-bottom: 15px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.filter {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 13px;
+}
+
+/* Barra de búsqueda */
+.search-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 12px;
+}
+
+    .search-input input {
+        border: none;
+        flex-grow: 1;
+        font-size: 14px;
+        outline: none;
+    }
+
+    .search-input i {
+        font-size: 16px;
+        color: #555;
+    }
+
+/* Tarjetas de productos */
+.product-card {
+    display: flex;
+    background-color: #888888;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+    .product-card img {
+        width: 90px;
+        height: auto;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 13px;
+}
+
+/* Barra de navegación inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #c2d0b4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #aaa;
+    z-index: 10;
+}
+
+    .bottom-nav i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-nav img {
+        width: 50px; /* tamaño pequeño */
+        height: 50px;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) contrast(100%);
+    }
+
+
+/* Tarjetas tipo menú */
+/* Tarjetas tipo menú */
+.card {
+    background-color: #8da68b; /* Color más opaco y uniforme al estilo de la imagen */
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra sutil opcional */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+    .card:hover {
+        transform: scale(1.01);
+    }
+
+
+
+/* Íconos + texto alineados */
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Íconos pequeños */
+.small-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Texto dentro del card */
+.card h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #2d2d2d;
+}
+
+
+/* Botón flotante de cerrar sesión (posición derecha inferior centrada con barra inferior) */
+.floating-btn {
+    position: fixed;
+    bottom: 70px; /* justo encima de la barra inferior */
+    right: 20px;
+    z-index: 20;
+}
+
+
+/* Botón flotante estilo Font Awesome */
+.floating-btn {
+    background-color: #3c592f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .floating-btn:hover {
+        background-color: #2e4525;
+    }
+
+
+
+   

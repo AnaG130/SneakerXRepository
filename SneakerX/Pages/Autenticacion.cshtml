@@ -1,0 +1,29 @@
+﻿@page
+@model AutenticacionModel
+@{
+    ViewData["Title"] = "Autenticación";
+}
+
+<body>
+    <header>
+        <h1>Verificación de Autenticación</h1>
+    </header>
+
+    <div class="container">
+        <form method="post">
+            <div class="login-box">
+                <label for="token">Ingrese el token enviado a su correo</label>
+                <input type="text" id="token" name="TokenIngresado" value="@Model.TokenIngresado" />
+
+                @if (!string.IsNullOrEmpty(Model.Mensaje))
+                {
+                    <p style="color:red; font-size:13px;">@Model.Mensaje</p>
+                }
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="login-button">Validar Token</button>
+            </div>
+        </form>
+    </div>
+</body>

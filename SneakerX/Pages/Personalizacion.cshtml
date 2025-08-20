@@ -1,0 +1,109 @@
+﻿@page
+@model SneakerX.Pages.PersonalizacionModel
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalización</title>
+    <link rel="stylesheet" href="~/css/personalizacion.css" />
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Personalización</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="content">
+        <form class="custom-form" method="post">
+            <label for="zapato">Zapato a personalizar</label>
+            <select id="zapato" name="IdProducto" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                @foreach (var p in Model.Productos)
+                {
+                    <option value="@p["IdProducto"]" data-precio="@p["Precio"]">@p["Nombre"]</option>
+                }
+            </select>
+
+
+            <label for="color-principal">Color principal</label>
+            <select id="color-principal" name="ColorPrincipal">
+                @foreach (var color in Model.Colores)
+                {
+                    <option value="@color">@color</option>
+                }
+
+            </select>
+
+            <label for="color-secundario">Color secundario</label>
+            <select id="color-secundario" name="ColorSecundario">
+                @foreach (var color in Model.Colores)
+                {
+                    <option value="@color">@color</option>
+                }
+
+            </select>
+
+            <label for="cordones">Color de cordones</label>
+            <select id="cordones" name="ColorCordones">
+                @foreach (var color in Model.Colores)
+                {
+                    <option value="@color">@color</option>
+                }
+
+            </select>
+
+            <div class="precio-carrito">
+                <span>₡ @Model.PrecioFinal.ToString("N2")</span>
+                <button type="submit">Agregar al carrito</button>
+            </div>
+        </form>
+
+    </main>
+
+    <!-- Barra de navegación inferior -->
+    <nav class="bottom-nav">
+        <a asp-page="/MenuPrincipal">
+            <img src="/img/shoe-box.png" alt="Catálogo">
+        </a>
+        <a asp-page="/Personalizacion">
+            <img src="/img/spray.png" alt="Personalización">
+        </a>
+        <a asp-page="/Carrito">
+            <img src="/img/shopping-cart (1).png" alt="Carrito">
+        </a>
+        <a asp-page="/MenuUsuario">
+            <img src="/img/people (1).png" alt="Usuario">
+        </a>
+    </nav>
+
+    <script>
+        const precioBaseElement = document.querySelector('select[name="IdProducto"]');
+        const colorPrincipal = document.querySelector('select[name="ColorPrincipal"]');
+        const colorSecundario = document.querySelector('select[name="ColorSecundario"]');
+        const colorCordones = document.querySelector('select[name="ColorCordones"]');
+        const totalPrecioSpan = document.querySelector('.precio-carrito span');
+
+        function calcularPrecio() {
+            let base = parseFloat(precioBaseElement.selectedOptions[0]?.getAttribute("data-precio")) || 0;
+            let extra = 0;
+
+            if (colorPrincipal.value !== "Color original") extra += 2000;
+            if (colorSecundario.value !== "Color original") extra += 1500;
+            if (colorCordones.value !== "Color original") extra += 1000;
+
+            let total = base + extra;
+            totalPrecioSpan.textContent = "₡ " + total.toLocaleString("es-CR", { minimumFractionDigits: 2 });
+        }
+
+        precioBaseElement.addEventListener("change", calcularPrecio);
+        colorPrincipal.addEventListener("change", calcularPrecio);
+        colorSecundario.addEventListener("change", calcularPrecio);
+        colorCordones.addEventListener("change", calcularPrecio);
+    </script>
+
+</body>
+</html>

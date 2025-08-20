@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+    <header>
+        <h1>Bienvenido a Sneakers X</h1>
+    </header>
+
+    <div class="container">
+        <div class="logo">
+            <img src="/img/logoSneakers.png" alt="Logo Sneakers">
+        </div>
+
+        <form method="post">
+            <div class="login-box">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="Usuario" placeholder="" value="@Model.Usuario" />
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="Contrasena" placeholder="" />
+
+                @if (!string.IsNullOrEmpty(Model.Mensaje))
+                {
+                    <p style="color:red; font-size:13px;">@Model.Mensaje</p>
+                }
+            </div>
+
+            <div class="buttons">
+                <a asp-page="/Registro" class="register">Registrarse</a>
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+            </div>
+
+            <div class="forgot">
+                <a href="/Recuperar">Olvidé mi contraseña</a>
+            </div>
+        </form>
+    </div>
+</body>

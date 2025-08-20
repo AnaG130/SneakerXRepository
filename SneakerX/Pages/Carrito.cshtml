@@ -1,0 +1,316 @@
+﻿@page
+@model SneakerX.Pages.CarritoModel
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="~/css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .modal-pago {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .metodo-form {
+            margin: 15px 0;
+        }
+
+            .metodo-form input,
+            .metodo-form select {
+                width: 100%;
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+            .modal-buttons button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                flex: 1;
+            }
+
+        #btnConfirmarPago {
+            background-color: #3c592f;
+            color: white;
+        }
+
+        #btnCancelarPago {
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    @Html.AntiForgeryToken()
+
+    <script>
+        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+        const usuarioId = "@HttpContext.Session.GetString("Identificacion")";
+
+        // Función para abrir el modal de pago
+        function abrirModal() {
+            document.getElementById("modalPago").classList.remove("hidden");
+            // Cargar tarjetas falsas
+            cargarTarjetasFalsas();
+        }
+
+        // Función para cerrar el modal de pago
+        function cerrarModal() {
+            document.getElementById("modalPago").classList.add("hidden");
+            // Limpiar formularios
+            document.getElementById("tarjetaSelect").value = "";
+            document.getElementById("telefonoEmisor").value = "";
+            document.getElementById("telefonoReceptor").value = "";
+            document.getElementById("detalleSinpe").value = "";
+        }
+
+        // Cambiar entre métodos de pago
+        function cambiarMetodoPago() {
+            const metodo = document.querySelector('input[name="metodo"]:checked').value;
+            document.getElementById("pago-tarjeta").classList.toggle("hidden", metodo !== "tarjeta");
+            document.getElementById("pago-sinpe").classList.toggle("hidden", metodo !== "sinpe");
+        }
+
+        // Cargar tarjetas falsas (simulación)
+        function cargarTarjetasFalsas() {
+            const tarjetas = [
+                { numero: "1234567812345678", saldo: 50000000 },
+                { numero: "8765432187654321", saldo: 2500000 },
+                { numero: "5555666677778888", saldo: 10000000 }
+            ];
+
+            const selectTarjeta = document.getElementById("tarjetaSelect");
+            selectTarjeta.innerHTML = '<option value="">-- Seleccione una tarjeta --</option>' +
+                tarjetas.map(t =>
+                    `<option value="${t.numero}">${t.numero} - ₡${t.saldo.toLocaleString()}</option>`
+                ).join("");
+        }
+
+        // Confirmar el pago (simulación)
+        async function confirmarPago() {
+            const metodo = document.querySelector('input[name="metodo"]:checked').value;
+
+            // Validaciones básicas según el método
+            if (metodo === "tarjeta") {
+                const tarjetaSelect = document.getElementById("tarjetaSelect");
+                if (!tarjetaSelect.value) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Seleccione una tarjeta',
+                        text: 'Por favor seleccione una tarjeta para continuar',
+                        confirmButtonText: 'Entendido'
+                    });
+                    return;
+                }
+            } else if (metodo === "sinpe") {
+                const emisor = document.getElementById("telefonoEmisor").value;
+                const receptor = document.getElementById("telefonoReceptor").value;
+                const detalle = document.getElementById("detalleSinpe").value;
+
+                if (!emisor || !receptor || !detalle) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Datos incompletos',
+                        text: 'Por favor complete todos los campos para SINPE',
+                        confirmButtonText: 'Entendido'
+                    });
+                    return;
+                }
+            }
+
+            try {
+                // Mostrar mensaje de procesamiento
+                Swal.fire({
+                    title: 'Procesando pago...',
+                    text: 'Por favor espere',
+                    allowOutsideClick: false,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                // Simular tiempo de procesamiento
+                await new Promise(resolve => setTimeout(resolve, 2000));
+
+                // Llamar al backend para aprobar el pedido
+                const res = await fetch("/Carrito?handler=AprobarPedido", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "RequestVerificationToken": token
+                    }
+                });
+
+                const result = await res.json();
+
+                if (result.success) {
+                    // Cerrar modal
+                    cerrarModal();
+
+                    // Mostrar mensaje de éxito
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Éxito!',
+                        text: result.message,
+                        confirmButtonText: 'Aceptar'
+                    }).then(() => {
+                        // Recargar la página
+                        window.location.reload();
+                    });
+                } else {
+                    throw new Error(result.message);
+                }
+            } catch (err) {
+                console.error("Error en el proceso de pago:", err);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Error al procesar el pago: ' + err.message,
+                    confirmButtonText: 'Entendido'
+                });
+            }
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configurar eventos de cambio de método de pago
+            document.querySelectorAll('input[name="metodo"]').forEach(r => {
+                r.addEventListener('change', cambiarMetodoPago);
+            });
+
+            // Configurar botones del modal
+            document.getElementById("btnConfirmarPago").addEventListener('click', confirmarPago);
+            document.getElementById("btnCancelarPago").addEventListener('click', cerrarModal);
+
+            // Configurar botón "Hacer Pedido"
+            document.querySelector(".order-btn").addEventListener('click', abrirModal);
+        });
+    </script>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Carrito de compras</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="cart-content">
+        @if (Model.Detalles.Count == 0)
+        {
+            <p style="text-align:center;">No hay productos en el carrito.</p>
+        }
+        else
+        {
+            @foreach (var item in Model.Detalles)
+            {
+                <div class="product-card">
+                    <img src="@item["ImagenUrl"]" alt="@item["Nombre"]" class="product-img" />
+                    <div class="product-info">
+                        <h3>@item["Nombre"]</h3>
+                        <p>
+                            Precio: ₡ @Convert.ToDecimal(item["Precio"]).ToString("N2")<br />
+                            Cantidad: @item["Cantidad"]
+                        </p>
+                    </div>
+
+                    <form method="post" asp-page-handler="Eliminar" style="position: absolute; right: -10px; bottom: -10px;">
+                        <input type="hidden" name="nombreProducto" value="@item["Nombre"]" />
+                        <button class="delete-btn" type="submit" title="Eliminar">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </form>
+                </div>
+            }
+        }
+    </main>
+
+    <!-- Precio y botón -->
+    <div class="bottom-bar">
+        <span class="total-price">₡ @Model.Total.ToString("N2")</span>
+        <button class="order-btn" type="button">Hacer Pedido</button>
+    </div>
+
+    <!-- Barra inferior de navegación -->
+    <nav class="bottom-nav">
+        <a asp-page="/MenuPrincipal">
+            <img src="/img/shoe-box.png" alt="Catálogo">
+        </a>
+        <a asp-page="/Personalizacion">
+            <img src="/img/spray.png" alt="Personalización">
+        </a>
+        <a asp-page="/Carrito">
+            <img src="/img/shopping-cart (1).png" alt="Carrito">
+        </a>
+        <a asp-page="/MenuUsuario">
+            <img src="/img/people (1).png" alt="Usuario">
+        </a>
+    </nav>
+
+    <!-- Modal de pago -->
+    <div id="modalPago" class="modal-pago hidden">
+        <div class="modal-content">
+            <h2>Método de pago</h2>
+
+            <div style="text-align: left; margin-bottom: 15px;">
+                <label><input type="radio" name="metodo" value="tarjeta" checked> Tarjeta</label><br>
+                <label><input type="radio" name="metodo" value="sinpe"> SINPE</label>
+            </div>
+
+            <div id="pago-tarjeta" class="metodo-form">
+                <label for="tarjetaSelect">Seleccionar tarjeta:</label>
+                <select id="tarjetaSelect">
+                    <!-- Las opciones se cargarán dinámicamente con JavaScript -->
+                </select>
+            </div>
+
+            <div id="pago-sinpe" class="metodo-form hidden">
+                <input type="text" id="telefonoEmisor" placeholder="Teléfono emisor" required />
+                <input type="text" id="telefonoReceptor" placeholder="Teléfono receptor" required />
+                <input type="text" id="detalleSinpe" placeholder="Detalle del pago" required />
+            </div>
+
+            <div class="modal-buttons">
+                <button id="btnCancelarPago">Cancelar</button>
+                <button id="btnConfirmarPago">Confirmar Pago</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

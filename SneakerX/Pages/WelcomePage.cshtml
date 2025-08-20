@@ -1,0 +1,113 @@
+﻿@page
+@model WelcomePageModel
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Sneakers X</title>
+    <link rel="stylesheet" href="~/css/onboarding.css" />
+</head>
+<body>
+    <!-- Página de Onboarding -->
+    <div id="onboarding-container" class="onboarding-container">
+        <div class="onboarding-page" id="page-1">
+            
+            <div class="container">
+                <header>
+                    <h1>Bienvenido a Sneakers X</h1>
+                </header>
+                <div class="logo">
+                    <img src="/img/logoSneakers.png" alt="Logo Sneakers">
+                </div>
+                <div class="welcome-box">
+                    <p>¡Bienvenido a Sneakers X! La tienda donde no solo compras los mejores zapatos, sino que los personalizas a tu gusto.</p>
+                </div>
+                <button class="next-button" onclick="showPage(2)">Explorar colección</button>
+            </div>
+        </div>
+
+        <div class="onboarding-page" id="page-2">
+            
+            <div class="container">
+                <header>
+                    <h1>Explora nuestra colección</h1>
+                </header>
+                <div class="logo">
+                    <img src="/img/icono_zapatos.png" alt="Logo Zapatos">
+                </div>
+                <p>Descubre una amplia variedad de estilos y diseños. Encuentra los zapatos ideales para ti.</p>
+                <button class="next-button" onclick="showPage(3)">Comienza a personalizar</button>
+            </div>
+        </div>
+
+        <div class="onboarding-page" id="page-3">
+            
+            <div class="container">
+                <header>
+                    <h1>¡Hazlos tuyos! Personaliza tus zapatos</h1>
+                </header>
+                <div class="logo">
+                    <img src="/img/persoZapatos.png" alt="Logo Zapatos">
+                </div>
+                <p style="padding-top: 60px;">Elige el diseño, el color, el material y las características que más te gusten.</p>
+                <button class="start-button" onclick="finishOnboarding()">Comienza a personalizar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (getCookie("onboardingComplete")) {
+                // Si la cookie existe, redirigir a la página principal (Index)
+                window.location.href = "/Index";
+            } else {
+                // Si no existe la cookie, mostrar el onboarding
+                document.getElementById("onboarding-container").style.display = "flex";
+                showPage(1); // Mostrar la primera página
+            }
+        });
+
+        function showPage(pageNumber) {
+            // Ocultar todas las páginas
+            const pages = document.querySelectorAll(".onboarding-page");
+            pages.forEach(page => page.classList.remove("active"));
+
+            // Mostrar la página solicitada
+            const activePage = document.getElementById(`page-${pageNumber}`);
+            if (activePage) {
+                activePage.classList.add("active");
+            }
+        }
+
+                function finishOnboarding() {
+            // Crear cookie de "onboardingComplete"
+            setCookie("onboardingComplete", "true", 365);
+
+            // Usar replace() para asegurarnos de que la redirección funcione
+            window.location.replace("/Index"); // Redirigir al Index
+        }
+
+
+
+
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiración en días
+            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+﻿@page
+@model SneakerX.Pages.RegistroModel
+@{
+    var paises = Model.Paises;
+}
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Sneakers X</title>
+    <link rel="stylesheet" href="~/css/registro.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .password-policies {
+            display: none;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+            .password-policies span {
+                display: block;
+                margin-bottom: 5px;
+                color: red;
+            }
+
+            .password-policies .valid {
+                color: green;
+            }
+
+        .info-icon {
+            margin-left: 8px;
+            color: #3c592f;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function validarPassword() {
+            var pwd = document.getElementById("password").value;
+
+            var mayuscula = /[A-Z]/.test(pwd);
+            var minuscula = /[a-z]/.test(pwd);
+            var numero = /[0-9]/.test(pwd);
+            var especial = /[\W_]/.test(pwd);
+            var longitud = pwd.length >= 8;
+
+            document.getElementById("pol-mayuscula").className = mayuscula ? "valid" : "";
+            document.getElementById("pol-minuscula").className = minuscula ? "valid" : "";
+            document.getElementById("pol-numero").className = numero ? "valid" : "";
+            document.getElementById("pol-especial").className = especial ? "valid" : "";
+            document.getElementById("pol-longitud").className = longitud ? "valid" : "";
+        }
+
+        function togglePoliticas() {
+            var politicas = document.getElementById("politicas");
+            politicas.style.display = politicas.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Sneakers X</h1>
+    </header>
+
+    <div class="form-container">
+        <form method="post">
+            <label for="id">Identificación</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="id" name="id" asp-for="Id" />
+                <button type="button" onclick="consultarTSE()" class="consultar-btn">Consultar</button>
+            </div>
+
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" asp-for="Nombre" readonly>
+
+            <label for="apellido1">Primer Apellido</label>
+            <input type="text" id="apellido1" name="apellido1" asp-for="Apellido1" readonly >
+
+            <label for="apellido2">Segundo Apellido</label>
+            <input type="text" id="apellido2" name="apellido2" asp-for="Apellido2" readonly>
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" asp-for="Correo">
+
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" asp-for="Usuario">
+
+            <label for="password">
+                Contraseña
+                <i class="fas fa-info-circle info-icon" onclick="togglePoliticas()" title="Ver políticas de contraseña"></i>
+            </label>
+            <input type="password" id="password" name="password" asp-for="Password" onkeyup="validarPassword()">
+
+            <!-- Políticas de la contraseña -->
+            <div id="politicas" class="password-policies">
+                <span id="pol-mayuscula">✔ Al menos 1 mayúscula</span>
+                <span id="pol-minuscula">✔ Al menos 1 minúscula</span>
+                <span id="pol-numero">✔ Al menos 1 número</span>
+                <span id="pol-especial">✔ Al menos 1 carácter especial</span>
+                <span id="pol-longitud">✔ Mínimo 8 caracteres</span>
+            </div>
+
+            <label for="confirmar">Confirmación de Contraseña</label>
+            <input type="password" id="confirmar" name="confirmar" asp-for="Confirmar">
+            <label>Pregunta de seguridad 1</label>
+
+            <select id="pregunta1" name="pregunta1" asp-for="Pregunta1">
+                <option value="¿Cuál es tu color favorito?">¿Cuál es tu color favorito?</option>
+                <option value="¿Cómo se llama tu primera mascota?">¿Cómo se llama tu primera mascota?</option>
+                <option value="¿Cuál fue tu primer colegio?">¿Cuál fue tu primer colegio?</option>
+                <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+                <option value="¿Dónde naciste?">¿Dónde naciste?</option>
+                <option value="¿Cuál es tu película favorita?">¿Cuál es tu película favorita?</option>
+            </select>
+            <input type="text" id="respuesta1" name="respuesta1" asp-for="Respuesta1">
+
+            <label>Pregunta de seguridad 2</label>
+            <select id="pregunta2" name="pregunta2" asp-for="Pregunta2">
+                <option value="¿Cuál es tu color favorito?">¿Cuál es tu color favorito?</option>
+                <option value="¿Cómo se llama tu primera mascota?">¿Cómo se llama tu primera mascota?</option>
+                <option value="¿Cuál fue tu primer colegio?">¿Cuál fue tu primer colegio?</option>
+                <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+                <option value="¿Dónde naciste?">¿Dónde naciste?</option>
+                <option value="¿Cuál es tu película favorita?">¿Cuál es tu película favorita?</option>
+            </select>
+            <input type="text" id="respuesta2" name="respuesta2" asp-for="Respuesta2">
+
+            <label>Pregunta de seguridad 3</label>
+            <select id="pregunta3" name="pregunta3" asp-for="Pregunta3">
+                <option value="¿Cuál es tu color favorito?">¿Cuál es tu color favorito?</option>
+                <option value="¿Cómo se llama tu primera mascota?">¿Cómo se llama tu primera mascota?</option>
+                <option value="¿Cuál fue tu primer colegio?">¿Cuál fue tu primer colegio?</option>
+                <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+                <option value="¿Dónde naciste?">¿Dónde naciste?</option>
+                <option value="¿Cuál es tu película favorita?">¿Cuál es tu película favorita?</option>
+            </select>
+            <input type="text" id="respuesta3" name="respuesta3" asp-for="Respuesta3">
+
+            <label for="pais">País</label>
+            <select id="pais" name="pais" onchange="cargarProvincias()">
+                <option value="">Seleccionar País</option>
+                @foreach (var pais in paises)
+                {
+                    <option value="@pais.Id">@pais.Nombre</option>
+                }
+            </select>
+
+            <label for="provincia">Provincia</label>
+            <select id="provincia" name="provincia" onchange="cargarCantones()">
+                <option value="">Seleccionar Provincia</option>
+            </select>
+
+            <label for="canton">Cantón</label>
+            <select id="canton" name="canton" onchange="cargarDistritos()">
+                <option value="">Seleccionar Cantón</option>
+            </select>
+
+            <label for="distrito">Distrito</label>
+            <select id="distrito" name="distrito">
+                <option value="">Seleccionar Distrito</option>
+            </select>
+
+            <input type="hidden" id="direccion" name="direccion" />
+
+
+            <button type="submit" class="floating-btn" title="Registrarse">
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+
+            <p style="color:red">@Model.Mensaje</p>
+        </form>
+    </div>
+
+
+    <script>
+        function cargarProvincias() {
+            var paisId = document.getElementById("pais").value;
+
+            $.ajax({
+                url: `/Registro?handler=Provincias&paisId=${paisId}`,
+                type: 'GET',
+                success: function(data) {
+                    var provinciaSelect = document.getElementById("provincia");
+                    provinciaSelect.innerHTML = '<option value="">Seleccionar Provincia</option>';
+                    data.forEach(function(provincia) {
+                        provinciaSelect.innerHTML += `<option value="${provincia.id}">${provincia.nombre}</option>`;
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error al cargar provincias: " + error);
+                }
+            });
+        }
+
+        function cargarCantones() {
+            var provinciaId = document.getElementById("provincia").value;
+
+            $.ajax({
+                url: `/Registro?handler=Cantones&provinciaId=${provinciaId}`,
+                type: 'GET',
+                success: function(data) {
+                    var cantonSelect = document.getElementById("canton");
+                    cantonSelect.innerHTML = '<option value="">Seleccionar Cantón</option>';
+                    data.forEach(function(canton) {
+                        cantonSelect.innerHTML += `<option value="${canton.id}">${canton.nombre}</option>`;
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error al cargar cantones: " + error);
+                }
+            });
+        }
+
+        function cargarDistritos() {
+            var cantonId = document.getElementById("canton").value;
+
+            $.ajax({
+                url: `/Registro?handler=Distritos&cantonId=${cantonId}`,
+                type: 'GET',
+                success: function(data) {
+                    var distritoSelect = document.getElementById("distrito");
+                    distritoSelect.innerHTML = '<option value="">Seleccionar Distrito</option>';
+                    data.forEach(function(distrito) {
+                        distritoSelect.innerHTML += `<option value="${distrito.id}">${distrito.nombre}</option>`;
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error al cargar distritos: " + error);
+                }
+            });
+        }
+
+        async function consultarTSE() {
+            const cedula = document.getElementById("id").value;
+
+            if (!cedula) {
+                alert("Por favor, digite una cédula.");
+                return;
+            }
+
+            try {
+                const response = await fetch(`http://localhost:3001/tse/${cedula}`);
+                const data = await response.json();
+                console.log("📬 Respuesta del TSE:", data);
+
+
+            if (data.success && data.persona) {
+                // Usá correctamente las propiedades con mayúsculas
+                const { Nombre, Apellido1, Apellido2 } = data.persona;
+
+                document.getElementById("nombre").value = Nombre;
+                document.getElementById("apellido1").value = Apellido1;
+                document.getElementById("apellido2").value = Apellido2;
+
+                document.getElementById("nombre").readOnly = true;
+                document.getElementById("apellido1").readOnly = true;
+                document.getElementById("apellido2").readOnly = true;
+            } else {
+                mostrarModal();
+            }
+
+            } catch (err) {
+                console.error("Error al consultar TSE:", err);
+                mostrarModal();
+            }
+        }
+
+
+        function mostrarModal() {
+            document.getElementById("modal-tse").style.display = "block";
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal-tse").style.display = "none";
+        }
+
+        async function registrarEnTSE(payload) {
+            
+          try {
+              console.log("Payload a enviar al TSE:", payload);
+
+            const response = await fetch('http://localhost:3001/tse', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+
+            // Manejo robusto de la respuesta
+            const text = await response.text(); // ← importante: usamos .text() primero
+
+            if (!response.ok) {
+              throw new Error("Error al registrar en el TSE: " + (text || "Error desconocido"));
+            }
+
+            // Si hay texto, intentamos convertirlo a JSON
+            if (text) {
+              const json = JSON.parse(text);
+              console.log("Persona registrada en el TSE:", json);
+              return json;
+            } else {
+              throw new Error("Respuesta vacía del servidor");
+            }
+
+          } catch (err) {
+            console.error("Error al registrar en el TSE:", err);
+            throw new Error("Error al registrar en el TSE: " + err.message);
+          }
+        }
+
+        async function enviarRegistroModal() {
+            const cedula = document.getElementById("id").value;
+            const nombre = document.getElementById("modal-nombre").value;
+            const apellido1 = document.getElementById("modal-apellido1").value;
+            const apellido2 = document.getElementById("modal-apellido2").value;
+            const telefono = document.getElementById("modal-telefono").value;
+
+            const payload = {
+                cedula,
+                nombre,
+                apellido1,
+                apellido2,
+                telefono
+            };
+
+            try {
+                const resultado = await registrarEnTSE(payload);
+
+                if (resultado.success) {
+                    alert("Persona registrada exitosamente en el TSE");
+                    document.getElementById("nombre").value = nombre;
+                    document.getElementById("apellido1").value = apellido1;
+                    document.getElementById("apellido2").value = apellido2;
+                    cerrarModal();
+                }
+            } catch (error) {
+                alert("❌ " + error.message);
+            }
+        }
+    </script>
+
+
+    <div id="modal-tse" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+        <div style="background:white; padding:20px; max-width:400px; margin:100px auto; border-radius:10px;">
+            <h3>Usuario no encontrado en el TSE</h3>
+            <p>¿Deseas registrar esta persona en el TSE?</p>
+            <input type="text" id="modal-nombre" placeholder="Nombre completo" />
+            <input type="text" id="modal-apellido1" placeholder="Primer apellido" />
+            <input type="text" id="modal-apellido2" placeholder="Segundo apellido" />
+            <input type="text" id="modal-telefono" placeholder="Teléfono" />
+            <button onclick="enviarRegistroModal()">Registrar</button>
+
+            <button onclick="cerrarModal()">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>

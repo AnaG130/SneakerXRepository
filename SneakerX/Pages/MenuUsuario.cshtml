@@ -1,0 +1,73 @@
+﻿@page
+@model SneakerX.Pages.MenuUsuarioModel
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario</title>
+    <link rel="stylesheet" href="~/css/menuusuario.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Usuario</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="content">
+        <!-- Tarjeta de Configuración de Perfil -->
+        <div class="card" onclick="location.href='/ActPerfil'">
+            <div class="icon-text">
+                <img src="/img/people (1).png" alt="Perfil" class="icon small-icon">
+                <div>
+                    <h2>Configuración de Perfil</h2>
+                    <p>Actualiza tus datos de perfil con información nueva y correcta</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Métodos de Pago -->
+        <div class="card" onclick="location.href='/MetodoPago'">
+            <div class="icon-text">
+                <img src="/img/credit-card (1).png" alt="Pago" class="icon small-icon">
+                <div>
+                    <h2>Metodos de Pago</h2>
+                    <p>Añade o Elimina los metodos de pago de tu perfil</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <!-- Botón de cerrar sesión -->
+    <form method="get" asp-page="/Index">
+        <button class="floating-btn" title="Cerrar sesión">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+    </form>
+
+    <!-- Barra de navegación inferior -->
+    <nav class="bottom-nav">
+        <a asp-page="/MenuPrincipal">
+            <img src="/img/shoe-box.png" alt="Catálogo">
+        </a>
+        <a asp-page="/Personalizacion">
+            <img src="/img/spray.png" alt="Personalización">
+        </a>
+        <a asp-page="/Carrito">
+            <img src="/img/shopping-cart (1).png" alt="Carrito">
+        </a>
+        <a asp-page="/MenuUsuario">
+            <img src="/img/people (1).png" alt="Usuario">
+        </a>
+    </nav>
+</body>
+</html>

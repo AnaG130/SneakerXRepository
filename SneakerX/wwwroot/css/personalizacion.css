@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    background-color: #3c592f;
+    width: 100vw;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    header h1 {
+        color: white;
+        font-size: 16px;
+    }
+
+/* Contenido principal */
+.content {
+    padding: 24px;
+    padding-bottom: 100px; /* espacio para la barra inferior */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Formulario */
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+    .custom-form label {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .custom-form select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+        background-color: white;
+        width: 100%;
+    }
+
+/* Precio y botón */
+.precio-carrito {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .precio-carrito span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .precio-carrito button {
+        background-color: #3c592f;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+/* Barra de navegación inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #c2d0b4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #aaa;
+    z-index: 10;
+}
+
+    .bottom-nav i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-nav img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) contrast(100%);
+    }

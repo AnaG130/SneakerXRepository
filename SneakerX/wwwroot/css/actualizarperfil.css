@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    background-color: #3c592f;
+    width: 100vw;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    header h1 {
+        color: white;
+        font-size: 16px;
+    }
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 400px;
+    margin: 40px auto 100px; /* Espaciado arriba y abajo */
+    padding: 0 15px;
+}
+
+/* Etiquetas e inputs */
+form label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+/* Botón de enviar */
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.floating-btn {
+    background-color: #3c592f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+    .floating-btn:hover {
+        background-color: #2e4525;
+    }
+
+/* Barra inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #c2d0b4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #aaa;
+    z-index: 10;
+}
+
+    .bottom-nav img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) contrast(100%);
+    }
